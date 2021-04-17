@@ -10,4 +10,14 @@ class Post extends Model
 {
     use HasFactory, Notifiable;
 
+     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'tittle',
+        'body',
+    ];
+
 }

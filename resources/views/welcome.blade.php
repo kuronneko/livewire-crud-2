@@ -22,13 +22,11 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         @livewireStyles
     </head>
-    <body class="antialiased">
-
-<div>
-
-    hola
-</div>
-
+    <body >
+        <div class="container mt-5">
+            <livewire:post-component/>
+        </div>
         @livewireScripts
+        @stack('scripts')
     </body>
 </html>
